@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;700&family=Fredoka+One&family=Ubuntu&display=swap');
+
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', cursive;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: #fafafa;
+}
+
+h1{
+  font-size: 40pt;
+  color: #7c73e6;
+}
+p{
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+
+.container{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: top;
+  height: 100%;
+}
+
+.item{
+  position: relative;
+  float: left;
+  /* Overflow is clipped, and the rest of the content is hidden: */
+  overflow: hidden;
+  margin: 20px 2%;
+  min-width: 320px;
+  max-width: 410px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px #a2a8d3;
+}
+
+.item:hover{
+  cursor: pointer;
+}
+
+.item:hover img{
+  opacity: 0;
+}
+
+.text{
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  color: #7c73e6;
+}
+  
+.text h3{
+  color: #7c73e6;
+}
+  
+.item:hover .text{
+  top: 20%;
+  font-size: 30px;
+}
+  
+.item:hover .button{
+  bottom: 20%;
+}
+  
+.item .button{
+  position: absolute;
+  bottom: -100px;
+  left: 25%;
+  width: 50%;
+  border: 3px solid #c4c1e0;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+  
+.button:hover{
+  background-color: #c4c1e0;
+  color: #F5F5F5;
+}
+
+  /* Modal */
+#modal{
+  background-color: #F5F5F5;
+  margin: 15% auto;
+  box-sizing: border-box;
+  width: 70vw;
+  max-height: 714px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  animation-name: animatemodal;
+  animation-duration: .5s;
+}
+
+#modal-container{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+}
+
+  /* Modal Animation section */
+@keyframes animatemodal {
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+#card-details{
+  padding: 0px 0px 20px 20px;
+  text-align: left;
+  position: relative;
+  height: 264px;
+  box-sizing: border-box;
+  border-top: 1px solid #363638;
+}
+
+  /* Close btn */
+  /* Close Button */
+#close-btn{
+  color: #aaa;
+  font-size: 30px;
+  font-weight: bold;;
+  position: absolute;
+  right: 12px;
+}
+
+#close-btn:hover,
+#close-btn:focus {
+  color: #363638;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#card-details .button{
+  cursor: pointer;
+  background-color: #7c73e6;
+  position:relative;
+  width: 30%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  left: 25px;
+  bottom: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  #info {
+    margin-bottom: 48px;
+  }
+
+  #card-details .button {
+    width: fit-content;
+    height: auto;
+
+  }
+}
