@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;700&family=Fredoka+One&family=Ubuntu&display=swap');
 
 
-body{
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Fredoka One', cursive;
 }
 
-section{
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,11 +16,11 @@ section{
   background-color: #eeeeee;
 }
 
-h1{
+h1 {
   font-size: 40pt;
   color: #0092ca;
 }
-p{
+p {
   margin-right: 20px;
   font-size: 0.9em;
 }
@@ -40,7 +40,7 @@ img{
   height: 100%;
 }
 
-.item{
+.item {
   position: relative;
   float: left;
   /* Overflow is clipped, and the rest of the content is hidden: */
@@ -54,15 +54,15 @@ img{
   box-shadow: 10px 10px 10px #0092ca;
 }
 
-.item:hover{
+.item:hover {
   cursor: pointer;
 }
 
-.item:hover img{
+.item:hover img {
   opacity: 0;
 }
 
-.text{
+.text {
   width: 80%;
   height: 90%;
   position: absolute;
@@ -71,20 +71,20 @@ img{
   color: #0092ca;
 }
   
-.text h3{
+.text h3 {
   color: #0092ca;
 }
   
-.item:hover .text{
+.item:hover .text {
   top: 20%;
   font-size: 30px;
 }
   
-.item:hover .button{
+.item:hover .button {
   bottom: 20%;
 }
   
-.item .button{
+.item .button {
   position: absolute;
   bottom: -100px;
   left: 25%;
@@ -95,13 +95,13 @@ img{
   transition: all 0.3s ease-in-out;
 }
   
-.button:hover{
+.button:hover {
   background-color: #0092ca;
   color: #F5F5F5;
 }
 
   /* Modal */
-#modal{
+#modal {
   background-color: #F5F5F5;
   margin: 15% auto;
   box-sizing: border-box;
@@ -112,7 +112,7 @@ img{
   animation-duration: .5s;
 }
 
-#modal-container{
+#modal-container {
   display: none;
   position: fixed;
   top: 0;
@@ -130,7 +130,7 @@ img{
   to{transform: scale(1);}
 }
 
-#card-details{
+#card-details {
   padding: 0px 0px 20px 20px;
   text-align: left;
   position: relative;
@@ -141,7 +141,7 @@ img{
 
   /* Close btn */
   /* Close Button */
-#close-btn{
+#close-btn {
   color: #aaa;
   font-size: 30px;
   font-weight: bold;;
@@ -156,7 +156,7 @@ img{
   cursor: pointer;
 }
 
-#card-details .button{
+#card-details .button {
   cursor: pointer;
   background-color: #7c73e6;
   position:relative;
@@ -165,7 +165,6 @@ img{
   border-radius: 5px;
   text-align: center;
   padding: 10px;
-
 }
 
 footer {
