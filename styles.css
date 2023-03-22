@@ -13,12 +13,12 @@ section{
   flex-direction: column;
   align-items: center;
   height: auto;
-  background-color: #fafafa;
+  background-color: #eeeeee;
 }
 
 h1{
   font-size: 40pt;
-  color: #7c73e6;
+  color: #0092ca;
 }
 p{
   margin-right: 20px;
@@ -31,6 +31,7 @@ p{
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
+  padding-bottom: 40px;
 }
 
 img{
@@ -50,7 +51,7 @@ img{
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 10px 10px 10px #a2a8d3;
+  box-shadow: 10px 10px 10px #0092ca;
 }
 
 .item:hover{
@@ -67,11 +68,11 @@ img{
   position: absolute;
   top: -100px;
   left: 10%;
-  color: #7c73e6;
+  color: #0092ca;
 }
   
 .text h3{
-  color: #7c73e6;
+  color: #0092ca;
 }
   
 .item:hover .text{
@@ -88,14 +89,14 @@ img{
   bottom: -100px;
   left: 25%;
   width: 50%;
-  border: 3px solid #c4c1e0;
+  border: 3px solid #0092ca;
   padding: 15px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
   
 .button:hover{
-  background-color: #c4c1e0;
+  background-color: #0092ca;
   color: #F5F5F5;
 }
 
@@ -159,15 +160,40 @@ img{
   cursor: pointer;
   background-color: #7c73e6;
   position:relative;
-  width: 30%;
+  width: 25%;
+  font-size: 17px;
   border-radius: 5px;
   text-align: center;
-  padding: 15px;
-  left: 25px;
-  bottom: 35px;
+  padding: 10px;
+
 }
 
-@media only screen and (max-width: 600px) {
+footer {
+	height: 250px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	gap: 4px;
+	grid-auto-flow: column;
+	background-color: #393e46;
+}
+
+footer  a {
+	margin: 20px;
+	font-size: 30px;
+	color: black;
+	padding: 10px 14px;
+	transition: all 100ms ease-in-out;
+	background-color: white;
+	border-radius: 50%;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+footer a:hover {
+	opacity: 1;
+}
+
+@media only screen and (max-width: 390px) {
   #info {
     margin-bottom: 48px;
   }
@@ -175,6 +201,11 @@ img{
   #card-details .button {
     width: fit-content;
     height: auto;
-
+    padding: 4px;
   }
+  h1 {
+    font-size: 2em;
+    padding-top: 10px;
+  }
+  
 }
